@@ -11,11 +11,7 @@ String artist_birth_day = request.getParameter("artist_birth_day");
 String artist_gender = request.getParameter("artist_gender");
 String telant = request.getParameter("telant");
 String agency = request.getParameter("agency");
-
-
 try {
-
-
 	Class.forName("oracle.jdbc.OracleDriver");
 	Connection con = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/xe", "system", "1234");
 	
@@ -29,6 +25,5 @@ try {
 } catch (Exception e) {
 	e.printStackTrace();
 }
-
 response.sendRedirect("../index.jsp?section=artist_lookup");
 %>

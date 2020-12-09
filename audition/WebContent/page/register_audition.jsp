@@ -88,7 +88,6 @@ function submit_form() {
 	alert("참가신청이 정상적으로 등록되었습니다!");
 	document.action_form.submit();
 }
-
 function reset_form() {
 	alert("정보를 지우고 처음부터 다시 입력합니다!");
 	document.action_form.reset();
